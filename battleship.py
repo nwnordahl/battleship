@@ -65,31 +65,24 @@ class Board:
 
 
 if __name__ == "__main__":
-    ### Testing out implementation ###
+    # Example
     board = Board(5)
-    board.show()
+
     board.set_coordinate(2, 4)
-    board.set_coordinate(2, 4)
-
     board.set_rand_coord()
+
     board.show()
 
     board.set_rand_coord()
-    board.show()
-
+    board.set_rand_coord()
+    board.set_rand_coord()
     board.set_rand_coord()
     board.show()
-
-    board.set_rand_coord()
-    board.show()
-
-    board.set_rand_coord()
-    board.show()
-
-    print(board.check_every_coordinate())
 
     board.every_X()
     board.show()
+    print(board.check_every_coordinate())
 
     board.every_O()
     board.show()
+    print(board.check_every_coordinate())
